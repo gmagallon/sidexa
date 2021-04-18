@@ -1,5 +1,20 @@
 .App {
-  text-align: center;
+  display: flex;
+  padding: 1em;
+}
+
+.Navigation {
+  padding: 0 2em;
+}
+
+.Content {
+  flex: 1;
+  padding: 0 2em;
+}
+
+.Search {
+  width: 100%;
+  padding: 0.5em;
 }
 
 .App-logo {
@@ -35,4 +50,77 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+.Menu-gender {
+  padding: 0.5em 1em;
+  cursor: pointer;
+}
+
+.Menu-gender:hover {
+  font-weight: bold;
+}
+
+.Menu-gender.selected {
+  color: white;
+  background-color: cadetblue;
+  border-radius: 7px;
+}
+
+.Movies-List {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.Movies-Movie {
+  width: 200px;
+  height: 350px;
+  cursor: pointer;
+}
+
+.Movies-Movie img {
+  border-radius: 10px;
+}
+
+.Movies-Movie, .Movies-Movie {
+  margin-right: 1em;
+  margin-bottom: 1em;
+}
+
+.MovieDetailsPopin {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.MovieDetailsPopin-content {
+  background-color: white;
+  width: 70%;
+  height: 90%;
+  overflow: scroll;
+
+  padding: 0 2em;
+}
+
+.MovieDetailsPopin-content header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.MovieDetailsPopin-details {
+  display: flex;
+}
+
+.MovieDetailsPopin-details div {
+  flex: 1;
+  padding: 0 2em;
 }
